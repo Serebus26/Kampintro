@@ -28,7 +28,7 @@ namespace KampIntro
             Console.WriteLine("En Buyuk Sayi  : " + maxNumbers);
             Console.WriteLine("Toplam sayi : " + totalNumbers);
 
-            //deneme123
+          
         }
     }
 }
