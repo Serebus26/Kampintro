@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ReferanceTypes")]
+[assembly: AssemblyTitle("DegerVeReferansTipler")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ReferanceTypes")]
+[assembly: AssemblyProduct("DegerVeReferansTipler")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("95d41f57-9981-4d89-9115-3fc8499b5458")]
+[assembly: Guid("673a1f18-5e57-44dd-862e-4e10a4fe03d8")]
 
 // Version information for an assembly consists of the following four values:
 //

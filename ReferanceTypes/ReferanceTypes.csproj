@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95D41F57-9981-4D89-9115-3FC8499B5458}</ProjectGuid>
+    <ProjectGuid>{673A1F18-5E57-44DD-862E-4E10A4FE03D8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ReferanceTypes</RootNamespace>
-    <AssemblyName>ReferanceTypes</AssemblyName>
+    <RootNamespace>DegerVeReferansTipler</RootNamespace>
+    <AssemblyName>DegerVeReferansTipler</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
