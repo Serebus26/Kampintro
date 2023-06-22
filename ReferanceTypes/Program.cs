@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.ExceptionServices;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ReferanceTypes
 {
@@ -15,36 +10,26 @@ namespace ReferanceTypes
             Person person = new Person();
             person.Id = 1;
             person.FirstName = "Serhat";
-            person.LastName = "Akar";
-
-
-
-            // Console.WriteLine("Person ID : " + person.Id +
-            //    " FirstName : " + person.FirstName + " LastName : " + person.LastName);
+            person.LastName = "AKAR";
 
             Customer customer = new Customer();
-            customer.CreditCardNumber = 999999;
-            customer.LastName = "Akar";
+            customer.FirstName = "Samet";
+            customer.LastName = "Karadeniz";
+            customer.CreditCardNumber = 99999;
 
+            Person person1 = customer;
 
-            // Console.WriteLine("Card Number : " + customer.CreditCardNumber);
+            Console.WriteLine(((Customer)person1).CreditCardNumber);
 
             Employee employee = new Employee();
-            employee.EmployeeNumber = 22;
-            employee.FirstName = "Serhat";
-
-
-            // Console.WriteLine("EmployeeNumber : " + employee.EmployeeNumber);
-
-
-            // Console.WriteLine(((Customer)person).CreditCardNumber);
+            employee.FirstName = "İlker";
 
             PersonManager personManager = new PersonManager();
-            personManager.Add(employee);
             personManager.Add(customer);
 
         }
     }
+
     class Person
     {
         public int Id { get; set; }
@@ -59,13 +44,14 @@ namespace ReferanceTypes
     {
         public int EmployeeNumber { get; set; }
     }
-
     class PersonManager
     {
         public void Add(Person person)
         {
-            Console.WriteLine(person.FirstName + person.LastName);
-            
+            Console.WriteLine("Id : " + person.Id + " : " + "FirsName : "
+                 + person.FirstName + "  " +
+               "LastName : " + person.LastName);
+
         }
     }
 }
