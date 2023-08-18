@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace ReferanceTypes
 {
     internal class Program
@@ -23,9 +22,9 @@ namespace ReferanceTypes
 
             Employee employee = new Employee();
             employee.FirstName = "İlker";
-
+            
             PersonManager personManager = new PersonManager();
-            personManager.Add(customer);
+            personManager.Add(customer); 
 
         }
     }
@@ -51,7 +50,6 @@ namespace ReferanceTypes
             Console.WriteLine("Id : " + person.Id + " : " + "FirsName : "
                  + person.FirstName + "  " +
                "LastName : " + person.LastName);
-
         }
     }
 }
