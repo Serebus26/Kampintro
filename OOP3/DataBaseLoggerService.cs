@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-     class AutoLoanManager : ICreditManager
+    class DataBaseLoggerService : ILoggerService
     {
-        public void Calculate()
+        public void Log()
         {
-            Console.WriteLine("Taşıt Kredisi Hesaplandı");
+            Console.WriteLine("Veritabanına loglandı");
         }
     }
 }

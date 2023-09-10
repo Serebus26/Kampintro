@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    internal class PersonelLoanManager : ICreditManager
+     class PersonelLoanManager : ICreditManager
     {
         public void Calculate()
         {

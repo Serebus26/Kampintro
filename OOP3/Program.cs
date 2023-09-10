@@ -1,28 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace OOP3
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
-            PersonelLoanManager personelLoanManager = new PersonelLoanManager();
-            AutoLoanManager autoLoanManager = new AutoLoanManager();
-            MortgageLoanManager mortgageLoanManager = new MortgageLoanManager();
+            ICreditManager personelLoanManager = new PersonelLoanManager();
+            ICreditManager autoLoanManager = new AutoLoanManager();
+            ICreditManager mortgageLoanManager = new MortgageLoanManager();
+
+            ILoggerService databaseLoggerService = new DataBaseLoggerService();
+            ILoggerService fileLoggerService = new FileLoggerService();
+
+            List<ILoggerService> loggerServices = new List<ILoggerService>()
+            { new DataBaseLoggerService(), new FileLoggerService() };
 
             ApplicationManager applicationManager = new ApplicationManager();
-            applicationManager.Apply(personelLoanManager);
-            applicationManager.Apply(autoLoanManager);
-            applicationManager.Apply(mortgageLoanManager);
+            applicationManager.Apply(personelLoanManager, loggerServices);
+            applicationManager.Apply(autoLoanManager, loggerServices);
+            applicationManager.Apply(mortgageLoanManager, loggerServices);
 
             List<ICreditManager> credits = new List<ICreditManager>() { personelLoanManager, autoLoanManager, mortgageLoanManager };
             applicationManager.KrediOnBilgilendirmesiYap(credits);
-            
-
         }
     }
 }

@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 namespace OOP3
 {
-    internal class ApplicationManager
+     class ApplicationManager
     {
-        public void Apply(ICreditManager creditManager)
+                                                //Method injection
+        public void Apply(ICreditManager creditManager, List<ILoggerService> loggerService)
         {
             creditManager.Calculate();
+
+            foreach (var loggerServices in loggerService)
+            {
+                loggerServices.Log();
+            }
         }
 
         public void KrediOnBilgilendirmesiYap(List<ICreditManager> credits)

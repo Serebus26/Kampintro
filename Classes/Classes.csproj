@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EF14FFFA-7596-4C7D-921E-99A7E12BA932}</ProjectGuid>
+    <ProjectGuid>{51242810-3A2F-420B-8D4C-C4C08B9ED9D0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OOP3</RootNamespace>
-    <AssemblyName>OOP3</AssemblyName>
+    <RootNamespace>Classes</RootNamespace>
+    <AssemblyName>Classes</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationManager.cs" />
-    <Compile Include="AutoLoanManager.cs" />
-    <Compile Include="CreditManager.cs" />
-    <Compile Include="DataBaseLoggerService.cs" />
-    <Compile Include="FileLoggerService.cs" />
-    <Compile Include="ILoggerService.cs" />
-    <Compile Include="MortgageLoanManager.cs" />
-    <Compile Include="PersonelLoanManager.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerManager.cs" />
+    <Compile Include="ProductManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
